@@ -1,0 +1,181 @@
+/*---------------------------Head------------------------*/
+
+/*---------------------------Head------------------------*/
+/*---------------------------search------------------------*/
+.search {
+  padding: 20px 0;
+}
+.search .width {
+  width: 20%;
+}
+.search-box {
+  width: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  /*padding: 10px;*/
+  border-radius: 50px;
+}
+.search-box i {
+  width: 5%;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 15px 0px;
+  font-size: 17px;
+}
+.search-box input {
+  width: 100%;
+  padding: 10px;
+}
+::placeholder {
+  font-size: 15px;
+}
+.search-box span {
+  width: 20%;
+  opacity: 0.5;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.cart {
+  position: relative;
+}
+.search .cart span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(255, 153, 204);
+  font-size: 12px;
+  color: #fff;
+}
+/*moves the cart to the end*/
+.search .f_flex {
+  justify-content: end;
+}
+/*-------------Nav bar-----------*/
+.categories {
+  background-color: #f9f6fc;
+  /*padding :0px 30px I changed to*/
+  padding: 0px 20px;
+  border-radius: 5px;
+  height: 6vh;
+  margin-top: 5px;
+  /*added*/
+  
+  position: relative;
+  left:50px
+}
+.categories span {
+  margin-right: 10px;
+  font-size: 25px;
+  margin-top: 10px;
+ 
+}
+.categories h4 {
+  font-weight: 500;
+  margin-top: 12px;
+ 
+}
+.categories h4 i {
+  margin-left: 10px;
+  
+}
+/******-----------navbar-------------------********/
+header {
+  height: 8vh;
+  box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+}
+header ul {
+  line-height: 8vh;
+}
+/* to make space between home pages */
+header ul li {
+  margin-left: 30px;
+}
+/* the Link tag as it treated as a tag */
+header ul li a {
+  transition: 0.5s;
+  font-size: 15px;
+  font-weight: 400;
+  /* i added the decoration and color*/
+  text-decoration: none;
+  color: black;
+}
+
+header ul li a:hover {
+  color: rgb(255, 153, 204);
+}
+.open {
+  display: none;
+}
+.search.active {
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+/*to edit the sizes when on mobile view*/
+@media (max-width: 768px) {
+  header ul {
+    padding-top: 30px;
+  }
+  .nav-links-MobileMenu {
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 888;
+  }
+  header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+  /* 4elt klam head w contact w kda*/
+  header .link {
+    display: none;
+  }
+
+  .close,
+  .open {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff99cc;
+    display: block;
+    font-size: 25px;
+    z-index: 999;
+  }
+  /*this to move bar down wards*/
+  .open {
+    top: 18%;
+    right: 30px;
+  }
+
+  .close {
+    right: 45%;
+  }
+  .close.home-btn {
+    /*linear gradient to make like shadow*/
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color: #ff99cc;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+ 
+}
